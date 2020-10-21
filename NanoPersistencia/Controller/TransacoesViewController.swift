@@ -13,8 +13,7 @@ protocol TransacoesDelegate: class {
 
 class TransacoesViewController: UIViewController {
     
-    var context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-    
+    var context: NSManagedObjectContext!
     var transacoes: [Transacao] = [] {
         didSet {
             calcValores()
@@ -73,6 +72,7 @@ class TransacoesViewController: UIViewController {
         createSpinnerView()
         setupButtonTitle()
         fetchTransacoes()
+       
         navigationController?.navigationBar.shadowImage = UIImage()
       
     }
@@ -98,6 +98,7 @@ class TransacoesViewController: UIViewController {
         let storyboard = UIStoryboard(name: "NovaTransacao", bundle: nil)
         guard let viewC = storyboard.instantiateViewController(identifier: "novatransacao") as? NovaTransacaoViewController else { fatalError() }
         viewC.modalPresentationStyle = .fullScreen
+        viewC.context = context
         present(viewC, animated: true)
     }
     

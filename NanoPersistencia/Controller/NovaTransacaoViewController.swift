@@ -11,7 +11,7 @@ class NovaTransacaoViewController: UIViewController, UIActionSheetDelegate {
     
     var amt = 0
     var transacao: Transacao?
-    var context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    var context: NSManagedObjectContext!
     
     weak var delegate: TransacoesDelegate?
     @IBOutlet weak var buttonTipoTransacao: UIButton!

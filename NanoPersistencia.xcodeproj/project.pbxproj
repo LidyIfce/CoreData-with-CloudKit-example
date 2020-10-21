@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AFB16AB62540708C002526C4 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFB16AB52540708C002526C4 /* CloudKit.framework */; };
 		AFB19EA72535EF27006A8D0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB19EA62535EF27006A8D0D /* AppDelegate.swift */; };
 		AFB19EA92535EF27006A8D0D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB19EA82535EF27006A8D0D /* SceneDelegate.swift */; };
 		AFB19EAE2535EF27006A8D0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFB19EAC2535EF27006A8D0D /* Main.storyboard */; };
@@ -32,6 +33,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AFB16AB32540708A002526C4 /* NanoPersistencia.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NanoPersistencia.entitlements; sourceTree = "<group>"; };
+		AFB16AB52540708C002526C4 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		AFB19EA32535EF27006A8D0D /* NanoPersistencia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NanoPersistencia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFB19EA62535EF27006A8D0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFB19EA82535EF27006A8D0D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,17 +66,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFB16AB62540708C002526C4 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AFB16AB42540708C002526C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AFB16AB52540708C002526C4 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AFB19E9A2535EF27006A8D0D = {
 			isa = PBXGroup;
 			children = (
 				AFB19EA52535EF27006A8D0D /* NanoPersistencia */,
 				AFB19EA42535EF27006A8D0D /* Products */,
+				AFB16AB42540708C002526C4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,6 +101,7 @@
 		AFB19EA52535EF27006A8D0D /* NanoPersistencia */ = {
 			isa = PBXGroup;
 			children = (
+				AFB16AB32540708A002526C4 /* NanoPersistencia.entitlements */,
 				AFB19EE72535F1A1006A8D0D /* Controller */,
 				AFB19EDF2535F183006A8D0D /* Model */,
 				AFB19EC82535F116006A8D0D /* View */,
@@ -374,6 +388,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NanoPersistencia/NanoPersistencia.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T373QFGJQA;
 				INFOPLIST_FILE = NanoPersistencia/Info.plist;
@@ -393,6 +408,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NanoPersistencia/NanoPersistencia.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T373QFGJQA;
 				INFOPLIST_FILE = NanoPersistencia/Info.plist;
