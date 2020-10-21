@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0Yd-LG-q52">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar View Controller-->
+        <scene sceneID="Rbl-5g-8sf">
+            <objects>
+                <tabBarController id="0Yd-LG-q52" customClass="TabBarViewController" customModule="DesafioIosMobils" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bnL-Cn-TuM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="jkj-sn-a5x" kind="relationship" relationship="viewControllers" id="BOf-I4-odb"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VxZ-aQ-u2w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-157" y="92"/>
+        </scene>
+        <!--Transacoes-->
+        <scene sceneID="Lrk-xE-6yB">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hGR-eK-tCZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Transacoes" id="jkj-sn-a5x" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="NBj-sw-dAm"/>
+                </viewControllerPlaceholder>
+            </objects>
+            <point key="canvasLocation" x="-466" y="496"/>
+        </scene>
+    </scenes>
+</document>

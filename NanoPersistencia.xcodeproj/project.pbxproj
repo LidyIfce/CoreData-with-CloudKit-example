@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AFB19EA72535EF27006A8D0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB19EA62535EF27006A8D0D /* AppDelegate.swift */; };
+		AFB19EA92535EF27006A8D0D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB19EA82535EF27006A8D0D /* SceneDelegate.swift */; };
+		AFB19EAE2535EF27006A8D0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFB19EAC2535EF27006A8D0D /* Main.storyboard */; };
+		AFB19EB12535EF27006A8D0D /* NanoPersistencia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AFB19EAF2535EF27006A8D0D /* NanoPersistencia.xcdatamodeld */; };
+		AFB19EB32535EF28006A8D0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFB19EB22535EF28006A8D0D /* Assets.xcassets */; };
+		AFB19EB62535EF28006A8D0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFB19EB42535EF28006A8D0D /* LaunchScreen.storyboard */; };
+		AFB19ECA2535F130006A8D0D /* Transacoes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFB19EC92535F130006A8D0D /* Transacoes.storyboard */; };
+		AFB19ECD2535F137006A8D0D /* TransacoesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB19ECC2535F137006A8D0D /* TransacoesTableViewCell.swift */; };
+		AFB19ED02535F13C006A8D0D /* TabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFB19ECF2535F13C006A8D0D /* TabBarController.storyboard */; };
+		AFB19ED32535F140006A8D0D /* Registro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFB19ED22535F140006A8D0D /* Registro.storyboard */; };
+		AFB19ED62535F145006A8D0D /* NovaTransacao.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFB19ED52535F145006A8D0D /* NovaTransacao.storyboard */; };
+		AFB19ED92535F14A006A8D0D /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFB19ED82535F14A006A8D0D /* Login.storyboard */; };
+		AFB19EDC2535F14E006A8D0D /* extensionTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB19EDB2535F14E006A8D0D /* extensionTextField.swift */; };
+		AFB19EE12535F18D006A8D0D /* TransacaoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB19EE02535F18D006A8D0D /* TransacaoService.swift */; };
+		AFB19EE42535F191006A8D0D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB19EE32535F191006A8D0D /* User.swift */; };
+		AFB19EE92535F1AD006A8D0D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB19EE82535F1AD006A8D0D /* LoginViewController.swift */; };
+		AFB19EEC2535F1B3006A8D0D /* NovaTransacaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB19EEB2535F1B2006A8D0D /* NovaTransacaoViewController.swift */; };
+		AFB19EEF2535F1B8006A8D0D /* RegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB19EEE2535F1B8006A8D0D /* RegistroViewController.swift */; };
+		AFB19EF22535F1BC006A8D0D /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB19EF12535F1BC006A8D0D /* TabBarViewController.swift */; };
+		AFB19EF52535F1C0006A8D0D /* TransacoesExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB19EF42535F1C0006A8D0D /* TransacoesExtension.swift */; };
+		AFB19EF82535F1C4006A8D0D /* TransacoesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB19EF72535F1C4006A8D0D /* TransacoesViewController.swift */; };
+		AFC7E9C5253893D6002D3B27 /* Transacao+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC7E9C3253893D6002D3B27 /* Transacao+CoreDataClass.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AFB19EA32535EF27006A8D0D /* NanoPersistencia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NanoPersistencia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFB19EA62535EF27006A8D0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AFB19EA82535EF27006A8D0D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AFB19EAD2535EF27006A8D0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AFB19EB02535EF27006A8D0D /* NanoPersistencia.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NanoPersistencia.xcdatamodel; sourceTree = "<group>"; };
+		AFB19EB22535EF28006A8D0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AFB19EB52535EF28006A8D0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AFB19EB72535EF28006A8D0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFB19EC92535F130006A8D0D /* Transacoes.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Transacoes.storyboard; sourceTree = "<group>"; };
+		AFB19ECC2535F137006A8D0D /* TransacoesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransacoesTableViewCell.swift; sourceTree = "<group>"; };
+		AFB19ECF2535F13C006A8D0D /* TabBarController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabBarController.storyboard; sourceTree = "<group>"; };
+		AFB19ED22535F140006A8D0D /* Registro.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Registro.storyboard; sourceTree = "<group>"; };
+		AFB19ED52535F145006A8D0D /* NovaTransacao.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NovaTransacao.storyboard; sourceTree = "<group>"; };
+		AFB19ED82535F14A006A8D0D /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		AFB19EDB2535F14E006A8D0D /* extensionTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensionTextField.swift; sourceTree = "<group>"; };
+		AFB19EE02535F18D006A8D0D /* TransacaoService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransacaoService.swift; sourceTree = "<group>"; };
+		AFB19EE32535F191006A8D0D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		AFB19EE82535F1AD006A8D0D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AFB19EEB2535F1B2006A8D0D /* NovaTransacaoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NovaTransacaoViewController.swift; sourceTree = "<group>"; };
+		AFB19EEE2535F1B8006A8D0D /* RegistroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistroViewController.swift; sourceTree = "<group>"; };
+		AFB19EF12535F1BC006A8D0D /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		AFB19EF42535F1C0006A8D0D /* TransacoesExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransacoesExtension.swift; sourceTree = "<group>"; };
+		AFB19EF72535F1C4006A8D0D /* TransacoesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransacoesViewController.swift; sourceTree = "<group>"; };
+		AFC7E9C3253893D6002D3B27 /* Transacao+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Transacao+CoreDataClass.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AFB19EA02535EF27006A8D0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AFB19E9A2535EF27006A8D0D = {
+			isa = PBXGroup;
+			children = (
+				AFB19EA52535EF27006A8D0D /* NanoPersistencia */,
+				AFB19EA42535EF27006A8D0D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AFB19EA42535EF27006A8D0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFB19EA32535EF27006A8D0D /* NanoPersistencia.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFB19EA52535EF27006A8D0D /* NanoPersistencia */ = {
+			isa = PBXGroup;
+			children = (
+				AFB19EE72535F1A1006A8D0D /* Controller */,
+				AFB19EDF2535F183006A8D0D /* Model */,
+				AFB19EC82535F116006A8D0D /* View */,
+				AFB19EA62535EF27006A8D0D /* AppDelegate.swift */,
+				AFB19EA82535EF27006A8D0D /* SceneDelegate.swift */,
+				AFB19EAC2535EF27006A8D0D /* Main.storyboard */,
+				AFB19EB22535EF28006A8D0D /* Assets.xcassets */,
+				AFB19EB42535EF28006A8D0D /* LaunchScreen.storyboard */,
+				AFB19EB72535EF28006A8D0D /* Info.plist */,
+				AFB19EAF2535EF27006A8D0D /* NanoPersistencia.xcdatamodeld */,
+			);
+			path = NanoPersistencia;
+			sourceTree = "<group>";
+		};
+		AFB19EC82535F116006A8D0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AFB19EC92535F130006A8D0D /* Transacoes.storyboard */,
+				AFB19ECC2535F137006A8D0D /* TransacoesTableViewCell.swift */,
+				AFB19ECF2535F13C006A8D0D /* TabBarController.storyboard */,
+				AFB19ED22535F140006A8D0D /* Registro.storyboard */,
+				AFB19ED82535F14A006A8D0D /* Login.storyboard */,
+				AFB19ED52535F145006A8D0D /* NovaTransacao.storyboard */,
+				AFB19EDB2535F14E006A8D0D /* extensionTextField.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AFB19EDF2535F183006A8D0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AFC7E9C3253893D6002D3B27 /* Transacao+CoreDataClass.swift */,
+				AFB19EE02535F18D006A8D0D /* TransacaoService.swift */,
+				AFB19EE32535F191006A8D0D /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AFB19EE72535F1A1006A8D0D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AFB19EE82535F1AD006A8D0D /* LoginViewController.swift */,
+				AFB19EEE2535F1B8006A8D0D /* RegistroViewController.swift */,
+				AFB19EF12535F1BC006A8D0D /* TabBarViewController.swift */,
+				AFB19EF42535F1C0006A8D0D /* TransacoesExtension.swift */,
+				AFB19EF72535F1C4006A8D0D /* TransacoesViewController.swift */,
+				AFB19EEB2535F1B2006A8D0D /* NovaTransacaoViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AFB19EA22535EF27006A8D0D /* NanoPersistencia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFB19EBA2535EF28006A8D0D /* Build configuration list for PBXNativeTarget "NanoPersistencia" */;
+			buildPhases = (
+				AFB19E9F2535EF27006A8D0D /* Sources */,
+				AFB19EA02535EF27006A8D0D /* Frameworks */,
+				AFB19EA12535EF27006A8D0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NanoPersistencia;
+			productName = NanoPersistencia;
+			productReference = AFB19EA32535EF27006A8D0D /* NanoPersistencia.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AFB19E9B2535EF27006A8D0D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					AFB19EA22535EF27006A8D0D = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+				};
+			};
+			buildConfigurationList = AFB19E9E2535EF27006A8D0D /* Build configuration list for PBXProject "NanoPersistencia" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AFB19E9A2535EF27006A8D0D;
+			productRefGroup = AFB19EA42535EF27006A8D0D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AFB19EA22535EF27006A8D0D /* NanoPersistencia */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AFB19EA12535EF27006A8D0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFB19EB62535EF28006A8D0D /* LaunchScreen.storyboard in Resources */,
+				AFB19ED32535F140006A8D0D /* Registro.storyboard in Resources */,
+				AFB19ED02535F13C006A8D0D /* TabBarController.storyboard in Resources */,
+				AFB19EB32535EF28006A8D0D /* Assets.xcassets in Resources */,
+				AFB19ECA2535F130006A8D0D /* Transacoes.storyboard in Resources */,
+				AFB19EAE2535EF27006A8D0D /* Main.storyboard in Resources */,
+				AFB19ED62535F145006A8D0D /* NovaTransacao.storyboard in Resources */,
+				AFB19ED92535F14A006A8D0D /* Login.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AFB19E9F2535EF27006A8D0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFB19EF52535F1C0006A8D0D /* TransacoesExtension.swift in Sources */,
+				AFB19EA72535EF27006A8D0D /* AppDelegate.swift in Sources */,
+				AFB19EEC2535F1B3006A8D0D /* NovaTransacaoViewController.swift in Sources */,
+				AFB19EF22535F1BC006A8D0D /* TabBarViewController.swift in Sources */,
+				AFB19EA92535EF27006A8D0D /* SceneDelegate.swift in Sources */,
+				AFB19EEF2535F1B8006A8D0D /* RegistroViewController.swift in Sources */,
+				AFB19EE12535F18D006A8D0D /* TransacaoService.swift in Sources */,
+				AFB19ECD2535F137006A8D0D /* TransacoesTableViewCell.swift in Sources */,
+				AFB19EE92535F1AD006A8D0D /* LoginViewController.swift in Sources */,
+				AFB19EB12535EF27006A8D0D /* NanoPersistencia.xcdatamodeld in Sources */,
+				AFC7E9C5253893D6002D3B27 /* Transacao+CoreDataClass.swift in Sources */,
+				AFB19EDC2535F14E006A8D0D /* extensionTextField.swift in Sources */,
+				AFB19EF82535F1C4006A8D0D /* TransacoesViewController.swift in Sources */,
+				AFB19EE42535F191006A8D0D /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AFB19EAC2535EF27006A8D0D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFB19EAD2535EF27006A8D0D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AFB19EB42535EF28006A8D0D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFB19EB52535EF28006A8D0D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AFB19EB82535EF28006A8D0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AFB19EB92535EF28006A8D0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AFB19EBB2535EF28006A8D0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T373QFGJQA;
+				INFOPLIST_FILE = NanoPersistencia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lidiane.NanoPersistencia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AFB19EBC2535EF28006A8D0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T373QFGJQA;
+				INFOPLIST_FILE = NanoPersistencia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lidiane.NanoPersistencia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AFB19E9E2535EF27006A8D0D /* Build configuration list for PBXProject "NanoPersistencia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFB19EB82535EF28006A8D0D /* Debug */,
+				AFB19EB92535EF28006A8D0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFB19EBA2535EF28006A8D0D /* Build configuration list for PBXNativeTarget "NanoPersistencia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFB19EBB2535EF28006A8D0D /* Debug */,
+				AFB19EBC2535EF28006A8D0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AFB19EAF2535EF27006A8D0D /* NanoPersistencia.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AFB19EB02535EF27006A8D0D /* NanoPersistencia.xcdatamodel */,
+			);
+			currentVersion = AFB19EB02535EF27006A8D0D /* NanoPersistencia.xcdatamodel */;
+			path = NanoPersistencia.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AFB19E9B2535EF27006A8D0D /* Project object */;
+}

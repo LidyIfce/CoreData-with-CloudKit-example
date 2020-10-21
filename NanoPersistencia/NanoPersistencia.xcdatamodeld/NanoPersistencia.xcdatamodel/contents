@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17192" systemVersion="19H2" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Transacao" representedClassName="Transacao" syncable="YES" codeGenerationType="category">
+        <attribute name="data" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="descricao" optional="YES" attributeType="String"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="status" optional="YES" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="YES"/>
+        <attribute name="tipo" optional="YES" attributeType="String"/>
+        <attribute name="valor" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="usuario" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Usuario" inverseName="transacoes" inverseEntity="Usuario"/>
+    </entity>
+    <entity name="Usuario" representedClassName="Usuario" syncable="YES" codeGenerationType="class">
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="senha" optional="YES" attributeType="String"/>
+        <relationship name="transacoes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Transacao" inverseName="usuario" inverseEntity="Transacao"/>
+    </entity>
+    <elements>
+        <element name="Transacao" positionX="-54" positionY="-54" width="128" height="148"/>
+        <element name="Usuario" positionX="-54" positionY="-9" width="128" height="103"/>
+    </elements>
+</model>
