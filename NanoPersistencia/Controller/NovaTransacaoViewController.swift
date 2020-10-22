@@ -12,6 +12,10 @@ class NovaTransacaoViewController: UIViewController, UIActionSheetDelegate {
     var amt = 0
     var transacao: Transacao?
     var context: NSManagedObjectContext!
+    var valor_numerico: Double!
+    var texto_descricao: String!
+    var status: Bool!
+    
     
     weak var delegate: TransacoesDelegate?
     @IBOutlet weak var buttonTipoTransacao: UIButton!
@@ -70,11 +74,8 @@ class NovaTransacaoViewController: UIViewController, UIActionSheetDelegate {
         if let transacao = transacao {
             self.context.delete(transacao)
             
-            do {
-                try self.context.save()
-            } catch {
-                print(error.localizedDescription)
-            }
+            TransacaoService.shared.save(context: context)
+            
             delegate?.didRemove()
             self.dismiss(animated: true, completion: nil)
         }
@@ -116,6 +117,9 @@ class NovaTransacaoViewController: UIViewController, UIActionSheetDelegate {
     }
     
     @IBAction func salvar(_ sender: Any) {
+        
+        getValues()
+        
         if transacao != nil {
             updateTransacao()
         } else {
@@ -126,30 +130,29 @@ class NovaTransacaoViewController: UIViewController, UIActionSheetDelegate {
         self.dismiss(animated: true, completion: nil)
     
     }
-    func createTransacao() {
+    
+    func getValues() {
         guard let valorStr = valor.text else { return }
-        let valor = NSString(string: valorStr).doubleValue
+        valor_numerico = NSString(string: valorStr).doubleValue
         guard let descricao = descricao.text else { return }
-        let status = buttonSwitch.isOn
-        
+        self.texto_descricao = descricao
+        status = buttonSwitch.isOn
+    }
+    
+    func createTransacao() {
         let newTransacao = Transacao(context: self.context)
         newTransacao.id = UUID()
         newTransacao.data = Date()
-        newTransacao.valor = valor
-        newTransacao.descricao = descricao
+        newTransacao.valor = valor_numerico
+        newTransacao.descricao = texto_descricao
         newTransacao.status = status
         newTransacao.transacaoType = self.transacaoType
     }
     
     func updateTransacao() {
-        guard let valorStr = valor.text else { return }
-        let valor = NSString(string: valorStr).doubleValue
-        guard let descricao = descricao.text else { return }
-        let status = buttonSwitch.isOn
-        
         if let transacao = transacao {
-            transacao.valor = valor
-            transacao.descricao = descricao
+            transacao.valor = valor_numerico
+            transacao.descricao = texto_descricao
             transacao.status = status
             transacao.transacaoType = self.transacaoType
         }
